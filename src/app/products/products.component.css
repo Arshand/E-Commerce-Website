@@ -1,0 +1,77 @@
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center; /* Center the content */
+}
+
+.product img {
+  width: 200px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set a maximum height */
+  object-fit: cover; /* Ensure the aspect ratio is maintained */
+  display: block;
+  margin: 0 auto 1rem; /* Center the image with margin */
+}
+
+.product h3, .product p {
+  margin: 0.5rem 0; /* Add some margin */
+}
+
+.product .button-container {
+  display: inline-block; /* Keep buttons inline */
+  margin-top: 1rem; /* Space above the button container */
+}
+
+.product button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.product button:last-child {
+  margin-right: 0;
+}
+
+/* Add to Cart button style */
+.product .add-to-cart {
+  background-color: #4CAF50;
+}
+
+.product .add-to-cart:hover {
+  background-color: #45a049;
+}
+
+/* Buy button style */
+.product .buy-now {
+  background-color: #ff9800;
+}
+
+.product .buy-now:hover {
+  background-color: #e68a00;
+}
+
+/* Popup notification styles */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.popup.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

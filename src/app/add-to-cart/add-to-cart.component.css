@@ -1,0 +1,27 @@
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cart-item button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .cart-item button:hover {
+    background-color: #ffa07a;
+  }
+  

@@ -1,0 +1,14 @@
+<div class="product" *ngFor="let product of products">
+  <img [src]="product.imageUrl" alt="{{product.name}}">
+  <h3>{{product.name}}</h3>
+  <p>{{product.price | currency:'INR'}}</p>
+  <div class="button-container">
+    <button class="add-to-cart" (click)="addToCart(product)">Add to Cart</button>
+    <button class="buy-now" (click)="buyNow(product)">Buy</button>
+  </div>
+</div>
+
+<!-- Popup notification -->
+<div class="popup" [class.hidden]="!popupVisible">
+  {{ popupMessage }}
+</div>

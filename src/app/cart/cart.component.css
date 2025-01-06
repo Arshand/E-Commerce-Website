@@ -1,0 +1,78 @@
+.cart-item {
+    border: 1px solid #09dae9;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .cart-item img {
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  .cart-item h3, .cart-item p {
+    margin: 0.5rem 0;
+  }
+  
+  .cart-item .button-container {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .cart-item button {
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    margin-right: 10px !important;
+    border-radius: 5px !important;
+  }
+  
+  .cart-item button:last-child {
+    margin-right: 0 !important;
+  }
+  
+  /* Delete button style */
+  .cart-item .delete {
+    background-color: #ff6347 !important; /* Ensure the style is applied */
+  }
+  
+  .cart-item .delete:hover {
+    background-color: #d9534f !important; /* Ensure the style is applied */
+  }
+  
+  /* Buy button style */
+  .cart-item .buy-now {
+    background-color: #5cb85c !important; /* Ensure the style is applied */
+  }
+  
+  .cart-item .buy-now:hover {
+    background-color: #4cae4c !important; /* Ensure the style is applied */
+  }
+  
+  /* Popup notification styles */
+  .popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .popup.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  

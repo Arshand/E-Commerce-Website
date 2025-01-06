@@ -1,0 +1,24 @@
+.checkout-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #4b0082;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  h3, p {
+    text-align: center;
+  }
+  

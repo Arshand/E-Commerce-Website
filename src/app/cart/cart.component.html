@@ -1,0 +1,14 @@
+<div class="cart-item" *ngFor="let item of cartItems">
+    <img [src]="item.imageUrl" alt="{{item.name}}">
+    <h3>{{item.name}}</h3>
+    <p>{{item.price | currency:'INR'}}</p>
+    <p>Quantity: {{item.quantity}}</p>
+    <button (click)="removeFromCart(item)">Delete</button>
+    <button (click)="buyNow(item)">Buy</button>
+  </div>
+  
+  <!-- Popup notification -->
+  <div class="popup" [class.hidden]="!popupVisible">
+    {{ addedProduct?.name }}
+  </div>
+  

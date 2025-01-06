@@ -1,0 +1,10 @@
+<div class="checkout-container">
+    <h2>Checkout</h2>
+    <div *ngIf="product">
+      <img [src]="product.imageUrl" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.price | currency }}</p>
+      <!-- Add additional checkout details here -->
+    </div>
+  </div>
+  

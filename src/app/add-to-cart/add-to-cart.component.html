@@ -1,0 +1,8 @@
+<div class="cart-item" *ngFor="let item of cartItems">
+    <img [src]="item.imageUrl" alt="{{item.name}}">
+    <h3>{{item.name}}</h3>
+    <p>{{item.price | indianCurrency}}</p>
+    <p>Quantity: {{item.quantity}}</p> <!-- Display quantity -->
+    <button (click)="removeFromCart(item)">Delete</button>
+  </div>
+  
