@@ -1,1 +1,1 @@
-# E-Commerce-Website
+To view the Project folder select master instead of main
